@@ -1,18 +1,43 @@
+/* console.log ("nombres")
+let nombres = [" pepe"," juan"," maria"," carlos"," jose"," julieta"," ana"]
 
-console.log("Hello, World!");
+/* let indice.pedro = nombres.indexOf("pedro") */
+/* 
+let indice_maria = nombres.indexOf("maria")
+nombres.splice(indice_maria, 1)
+ */
+/* let indice_jose = nombres.indexOf("jose")
+nombres.splice("indice_jose", 1, "josesito") */
 
-let 
-numeroRandom= Math.floor(Math.random() * 20) + 1;
-console.log(numeroRandom);
-
-for (let iteration = 1;
-    iteration <= 5;
-    iteration++) 
-    {let numeroUsuario = parseInt(prompt("Adivina el número entre 1 y 20:"));
+/* const notas = [90, 40, 100]
+function calcularPromedio (numeros){
+    let sumaTotal = 0;
+    for (let numero of numeros) {
+        sumaTotal + numero;
     }
-
-    function saludar (nombre){
-
-console.log("hola" + nombre + "!")
+    let promedio = sumaTotal / numeros.length
+    return promedio
+} */
+let nombres = ['tv noblex', 'tv samsung', 'tv noblex']
+function contarNombres(lista, nombreBuscado){
+    let contador = 0;
+    for(const nombre of lista){
+         if(nombre === nombreBuscado){
+           contador++;
+    }
+    }
+    return contador;
 }
-saludar (" damian")
+
+//subir el precio de un determinado producto en una lista de stock
+
+console.log (contarNombres(nombres, "tv noblex"))
+
+function subirPrecio = (productos, id, precioASubir){
+    for(const producto of productos){
+        if(producto.id === idProducto){
+            producto.precio = producto.precio + precioASubir
+            break;
+        }
+    }
+}
