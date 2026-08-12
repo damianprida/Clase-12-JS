@@ -41,3 +41,48 @@ function subirPrecio = (productos, id, precioASubir){
         }
     }
 }
+const producto = {
+    id: 1, 
+    titulo: 'Tv Samsung 52"',
+    precio: 4000
+}
+/* 
+Dado el producto escribir dentro de un elemento con id product-card
+h2: titulo
+span: precio
+Estructura: 
+    <h2></h2>
+    <div>
+        <span>Precio: <strong>$4000</strong></span>
+    </div>
+    <button>Comprar</button>
+*/
+const mensajes = [
+    {
+        autor: 'pepe',
+        mensaje: "hola que tal!",
+        fecha: '21:30',
+        id: 1
+    },
+    {
+        autor: 'Tu',
+        mensaje: "Todo bien y vos?",
+        fecha: '21:32',
+        id: 2
+    },
+    {
+        autor: 'pepe',
+        mensaje: 'Genial!',
+        fecha: '21:35',
+        id: 3
+    }
+]
+/* 
+Renderizar la lista de mensajes
+<div>
+    <h3>Autor</h3>
+    <p>Mensaje</p>
+    <span>Fecha</span>
+    <hr>
+</div>
+*/
